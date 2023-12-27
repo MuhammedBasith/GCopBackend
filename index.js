@@ -1,10 +1,15 @@
 const { GoogleGenerativeAI } = require("@google/generative-ai");
+const cors = require('cors');
 const express = require('express');
 
 const apiKey = process.env.Gemini_API_Key
 const genAI = new GoogleGenerativeAI(apiKey);
 const app = express();
 const port = 3000;
+
+app.use(cors({
+    origin: '*'
+}));
 
 async function run(prompt) {
     const model = genAI.getGenerativeModel({ model: "gemini-pro" });
