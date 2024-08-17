@@ -49,4 +49,4 @@ Welcome to the backend of my fun little side project! 🚀 This server is powere
 
 ## License
 
-Just having fun with this one! Feel free to use it and enjoy. 😄
+Just having fun with this one! Feel free to use it and enjoy. 🎉
